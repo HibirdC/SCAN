@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/login_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center" >
+        <FrameLayout
+            android:id="@+id/username_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:gravity="center" >
+            <EditText
+                android:id="@+id/etuserName"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:hint="输入真实姓名"
+                android:paddingRight="60dp"
+                android:maxLength="20"
+                android:paddingLeft="55dp" >
+            </EditText>
+			<ImageView
+                android:layout_width="24dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="8dp"               
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/login_usr_in_img"
+                android:visibility="visible" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/usercode_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_layout"
+            android:layout_marginTop="6dp"
+            android:gravity="center" >
+            <EditText
+                android:id="@+id/etPWD"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp" 
+                android:inputType="textPassword"
+                android:paddingRight="60dp"
+                android:maxLength="20"
+                android:hint="输入用户密码"
+                android:paddingLeft="55dp" >
+            </EditText>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="7dp"               
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/login_code_in_img" />
+        </FrameLayout>
+	</RelativeLayout>
+</RelativeLayout>
